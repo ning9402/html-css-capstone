@@ -30,31 +30,30 @@
                         <li><a href="login.html">Login</a></li>
                     </ul>
                 </nav>
-                <img src="images/supermarket2.jpg" width="30px" height="30px">
             </div>
         </div>
 
         <main>
-            <h2></h2><br>
-            <div class="login">
-                <form id="login" method="get" action="login.php">
-                    <label><b>User Name
-                        </b>
-                    </label>
-                    <input type="text" name="Uname" id="Uname" placeholder="Username">
-                    <br><br>
-                    <label><b>Password
-                        </b>
-                    </label>
-                    <input type="Password" name="Pass" id="Pass" placeholder="Password">
-                    <br><br>
-                    <input type="button" name="log" id="log" value="Log In Here">
-                    <br><br>
-                    <br><br>
-                    <input type="checkbox" id="check">
-                    <span>Remember me</span><a href="#">Forgot Password?</a>
-                </form>
-            </div>
+            <form action="action_page.php" method="post">
+              
+                <div class="container2">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+              
+                <div class="container2" style="background-color:#f1f1f1">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
         </main>
 
     </div>
@@ -65,11 +64,11 @@
                 <div class="row">
                     <div class="footer-col-1">
                         <h3>Download our App</h3>
-                        <p>Download here!</p>
-                    </div>
-                    <div class="footer-col-2">
-                        <h3>Download our App</h3>
-                        <p>Download here!</p>
+                        <p>Download App for Andriod and iOS</p>
+                        <div class="app-logo">
+                            <img src="images/google.png">
+                            <img src="images/appstore.jpg">
+                        </div>
                     </div>
                     <div class="footer-col-3">
                         <h3>Useful Links</h3>
