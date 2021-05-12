@@ -7,58 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
 <body>
-    <header class="container bg-warning">
-        <h1 class="text-success text-center">Little Farm Supermarket</h1>
-    </header>
 
-    <nav>
-        <div class="container flex space-between">
-            <div class="flex flex-one float-right">
-                <div>
-                    <ul class="flex space-between">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="200px">
+                </div>
+                <nav>
+                    <ul class="flex space-between float-right">
                         <li><a href="index.html">Home Page</a></li>
                         <li><a href="contactus.html">Contact Us</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="register.html">Register</a></li>
                         <li><a href="login.html">Login</a></li>
                     </ul>
-                </div>
+                </nav>
+                <img src="images/supermarket2.jpg" width="30px" height="30px">
             </div>
         </div>
-    </nav>
-    
-    <main>
-        <h2></h2><br>
-        <div class="login">
-            <form id="login" method="get" action="login.php">
-                <label><b>User Name
-                    </b>
-                </label>
-                <input type="text" name="Uname" id="Uname" placeholder="Username">
-                <br><br>
-                <label><b>Password
-                    </b>
-                </label>
-                <input type="Password" name="Pass" id="Pass" placeholder="Password">
-                <br><br>
-                <input type="button" name="log" id="log" value="Log In Here">
-                <br><br>
-                <br><br>
-                <input type="checkbox" id="check">
-                <span>Remember me</span><a href="#">Forgot Password?</a>
-            </form>
-        </div>
-    </main>
 
-    <footer class="container bg-aqua">
-        <p class="text-center">&copy; 2021 by Ning</p>
+        <main>
+            <h2></h2><br>
+            <div class="login">
+                <form id="login" method="get" action="login.php">
+                    <label><b>User Name
+                        </b>
+                    </label>
+                    <input type="text" name="Uname" id="Uname" placeholder="Username">
+                    <br><br>
+                    <label><b>Password
+                        </b>
+                    </label>
+                    <input type="Password" name="Pass" id="Pass" placeholder="Password">
+                    <br><br>
+                    <input type="button" name="log" id="log" value="Log In Here">
+                    <br><br>
+                    <br><br>
+                    <input type="checkbox" id="check">
+                    <span>Remember me</span><a href="#">Forgot Password?</a>
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download here!</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Download our App</h3>
+                        <p>Download here!</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Wechat</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Little Farm Supermarket</p>
+            </div>
+        </div>
     </footer>
 
     <!--Bootstrap script files go at bottom of the body-->
